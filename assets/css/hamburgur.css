@@ -1,0 +1,87 @@
+nav {
+  background: white;
+  padding: 5px 40px;
+  margin-top: 0;
+  box-shadow: 0 4px 5px -1px rgba(194, 190, 190, 0.1);
+}
+button:hover {
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  color: black;
+}
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.new {
+  flex: 1;
+  color: black;
+  font-size: 23px;
+  user-select: none;
+}
+nav ul li.new button {
+  background-color: white;
+  font-weight: 600;
+  border: 0;
+}
+nav ul li .btn1 {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 15px;
+}
+nav ul li #create {
+  background-color: #4267b2;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+}
+nav ul li #create:hover {
+  background-color: #1cadd1;
+}
+nav ul li #draft {
+  color: grey;
+  background: inherit;
+  border: 0;
+  border-radius: 10px;
+}
+nav ul li #draft:hover {
+  background-color: grey;
+  color: white;
+}
+nav ul li #delete {
+  color: red;
+  background-color: inherit;
+  border: 0;
+  border-radius: 10px;
+}
+nav ul li #delete:hover {
+  color: white;
+  background-color: red;
+}
+nav ul li:hover .btn1 {
+  color: black;
+}
+nav ul li i {
+  font-size: 23px;
+}
+nav ul li.btn {
+  display: none;
+}
+nav ul li.btn.hide i:before {
+  content: "\f00d";
+}
