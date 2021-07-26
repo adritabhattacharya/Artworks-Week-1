@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/hover-border.css">
+    <link rel="stylesheet" href="../assets/css/customize.min.css">
+    <link rel="stylesheet" href="../assets/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/profile-upload.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <title>7 Location</title>
+    <style>
+        #photo1,
+        #photo2 {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+        }
+
+        #file,
+        #file2 {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header style="height: 10vh;" id="header"
+        class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered  ">
+        <div class="container flex">
+            <h1 class="h2"><i class="fas fa-chevron-left"> </i><span> Add New Location</span></h1>
+            <div class="butts" id="buttons">
+
+                <span class="buttons-dropdown">
+                    <button class="create"><i class="fas fa-check " style=" margin-right: 10px;"></i>Create</button>
+                    <button class="save"><i class="far fa-clock" style="margin-right: 10px;"></i>Save Draft</button>
+                    <button class="delete"><i class="fas fa-trash" style="margin-right: 10px;"></i>Delete</button>
+                </span>
+                <span class="dropdown-container">
+
+                    <button class="create"><i class="fas fa-check " style=" margin-right: 10px;"></i>Create</button>
+                    <span class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            style="cursor:pointer;" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        </svg>
+                        <div class="dropdown-content">
+                            <ul class="menu" style="list-style-type:none;">
+                                <li><button class="save"><i class="far fa-clock" style=" margin-right: 10px;"></i>Save
+                                        Draft</button>
+                                </li>
+                                <li><button class="delete"><i class="fas fa-trash"
+                                            style=" margin-right: 10px;"></i>Delete</button></li>
+                            </ul>
+                        </div>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main id="content" role="main" class="main">
+        <div class="content container">
+            <div class="row justify-content-lg-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <span style="font-size: large; font-weight: 500; color: black;">Primary Details</span><br>
+                            <div class="profilePic">
+                                <img src="https://www.kaindl.com/fileadmin/_processed_/d/8/csm_2162_PE_Dekorbild_0ec3e17e00.jpg"
+                                    id="photo1">
+                                <input type="file" id="file"
+                                    onchange="document.getElementById('photo1').src = window.URL.createObjectURL(this.files[0])">
+                                <label for="file" id="uploadBtn" style="cursor: pointer; padding: 20px;">Add Profile
+                                    Picture</label>
+                            </div>
+                            <form action="" class="formaligncs">
+                                <!-- <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <div style="float: left; width: 40px; height: 40px; background-color: gray; border-radius: 20px;">
+                                        </div>
+
+                                         <div style="font-size: 14px; font-weight: 600; height: 40px; padding: 10px; margin-left: 50px;">
+                                            Add a Profile Picture
+                                        </div>
+
+
+                                    </div>
+                                </div> -->
+
+
+                                <!-- Input Group -->
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Location Name
+                                            <span style="color: red;">*</span></label>
+
+                                        <input type="text" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder="Location Name here"
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+
+                                <!-- Input Group -->
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Phone</label>
+
+                                        <input type="tel" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder="+91 0987654321"
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Email</label>
+
+                                        <input type="email" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder="loginid@gmail.com"
+                                            aria-label="Mark Williams" style="float: left;">
+
+
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Website</label>
+
+                                        <input type="tel" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder="www.websitename.com"
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Social
+                                            Media</label>
+
+                                        <input type="tel" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder=""
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Add to
+                                            Group</label>
+
+                                        <input type="tel" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder=""
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Interests</label>
+
+                                        <input id="form-tags-2" name="tags-2" type="text" value="">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Address</label>
+
+                                        <input type="tel" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder=""
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label for="formControlHoverLightMedium" class="input-label">City</label>
+
+                                            <input type="text" class="form-control form-control-hover-light"
+                                                id="formControlHoverLightMedium" placeholder=""
+                                                aria-label="Mark Williams">
+
+                                        </div>
+                                        <!-- End Input Group -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+
+                                            <label for="formControlHoverLightType"
+                                                class="input-label">State/Province</label>
+
+                                            <input type="text" class="form-control form-control-hover-light"
+                                                id="formControlHoverLightType" placeholder=""
+                                                aria-label="Mark Williams">
+                                        </div>
+                                        <!-- End Input Group -->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label for="formControlHoverLightMedium" class="input-label">Country</label>
+
+                                            <input type="text" class="form-control form-control-hover-light"
+                                                id="formControlHoverLightMedium" placeholder=""
+                                                aria-label="Mark Williams">
+
+                                        </div>
+                                        <!-- End Input Group -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+
+                                            <label for="formControlHoverLightType" class="input-label">Zip-code</label>
+
+                                            <input type="text" class="form-control form-control-hover-light"
+                                                id="formControlHoverLightType" placeholder=""
+                                                aria-label="Mark Williams">
+                                        </div>
+                                        <!-- End Input Group -->
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row justify-content-lg-center" style="margin-top: 30px;">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <span style="font-size: large; font-weight: 500; color: black;">Link Contact</span><br>
+                            <span style="font-size: small; font-weight: 400; color: black;">Add from Existing Contact
+                                List</span><br>
+                            <div class="profilePic">
+                                <img src="https://www.kaindl.com/fileadmin/_processed_/d/8/csm_2162_PE_Dekorbild_0ec3e17e00.jpg"
+                                    id="photo2">
+                                <input type="file" id="file2"
+                                    onchange="document.getElementById('photo2').src = window.URL.createObjectURL(this.files[0])">
+                                <label for="file2" id="uploadBtn" style="cursor: pointer; padding: 20px;">Add Profile
+                                    Picture</label>
+                            </div>
+                            <form action="" class="formaligncs">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label for="formControlHoverLightMedium" class="input-label">First
+                                                Name <span style="color: red;">*</span></label>
+
+
+                                            <input type="text" class="form-control form-control-hover-light"
+                                                id="formControlHoverLightMedium" placeholder="Name Here"
+                                                aria-label="Mark Williams">
+
+                                        </div>
+                                        <!-- End Input Group -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+
+                                            <label for="formControlHoverLightType" class="input-label">Last Name</label>
+
+                                            <input type="text" class="form-control form-control-hover-light"
+                                                id="formControlHoverLightType" placeholder=""
+                                                aria-label="Mark Williams">
+                                        </div>
+                                        <!-- End Input Group -->
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Job Title</label>
+
+                                        <input type="text" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder=""
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Working
+                                            Dates</label>
+
+                                        <input type="text" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder=""
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Phone</label>
+
+                                        <input type="tel" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder="+91 0987654321"
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+
+                                        <label for="formControlHoverLightFullName" class="input-label">Email</label>
+
+                                        <input type="email" class="form-control form-control-hover-light"
+                                            id="formControlHoverLightFullName" placeholder="loginid@gmail.com"
+                                            aria-label="Mark Williams">
+                                    </div>
+                                    <!-- End Input Group -->
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/profileupload.js"></script>
+</body>
+
+
+</html>

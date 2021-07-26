@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>8 Making new artwork</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/vendor/icon-set/style.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/custom1.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../assets/css/profile-upload.css" />
+  <script src="https://kit.fontawesome.com/c04e145a49.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/css/navbar.css">
+</head>
+
+<body>
+  <header style="height: 10vh;" id="header"
+    class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered  ">
+    <div class="container flex">
+      <h1 class="h2"><i class="fas fa-chevron-left"> </i><span> Making New</span></h1>
+      <div class="butts" id="buttons">
+
+        <span class="buttons-dropdown">
+          <button class="create"><i class="fas fa-check " style=" margin-right: 10px;"></i>Create</button>
+          <button class="save"><i class="far fa-clock" style="margin-right: 10px;"></i>Save Draft</button>
+          <button class="delete"><i class="fas fa-trash" style="margin-right: 10px;"></i>Delete</button>
+        </span>
+        <span class="dropdown-container">
+
+          <button class="create"><i class="fas fa-check " style=" margin-right: 10px;"></i>Create</button>
+          <span class="dropdown">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="cursor:pointer;"
+              class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path
+                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+            </svg>
+            <div class="dropdown-content">
+              <ul class="menu" style="list-style-type:none;">
+                <li><button class="save"><i class="far fa-clock" style=" margin-right: 10px;"></i>Save
+                    Draft</button>
+                </li>
+                <li><button class="delete"><i class="fas fa-trash" style=" margin-right: 10px;"></i>Delete</button></li>
+              </ul>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" role="main" class="main">
+    <div class="content container">
+      <div class="row justify-content-lg-center mt-4">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <form action="" class="formaligncs">
+
+
+                <!-- Input Group -->
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <h2>Primary Details</h2>
+                    <label for="formControlHoverLightFullName" class="input-label">Title <span
+                        style="color: red;">*</span></label>
+
+                    <input type="text" class="form-control form-control-hover-light" id="formControlHoverLightFullName"
+                      placeholder="New Artwork title here" aria-label="New Artwork">
+                  </div>
+                  <!-- End Input Group -->
+                </div>
+
+                <!-- Input Group -->
+                <div class="col-mmd-12 form-group">
+                  <label for="formControlHoverLightGenderSelect" class="input-label">Artist Name</label>
+
+                  <select id="formControlHoverLightGenderSelect" class="custom-select custom-select-hover-light">
+                    <option>Choose a name</option>
+                    <option>John</option>
+                    <option>Frankin</option>
+                    <option>Marie</option>
+                  </select>
+
+                  <!-- new artist pop up add start-->
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btnnewmodopncs" data-toggle="modal"
+                    data-target="#exampleModalCenteredScrollable">
+                    new Artist
+                  </button>
+                  <!-- End  Button trigger modal -->
+
+                  <!-- Modal -->
+                  <div id="exampleModalCenteredScrollable" class="modal fade" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Modal title
+                          </h5>
+                          <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal"
+                            aria-label="Close">
+                            <i class="tio-clear tio-lg"></i>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+
+                          <div class="row">
+                            <div class="col-md-12 form-group">
+
+                              <label for="formControlHoverLightFullName" class="input-label">Title</label>
+
+                              <input type="text" class="form-control form-control-hover-light"
+                                id="formControlHoverLightFullName" placeholder="Mark Williams"
+                                aria-label="Mark Williams">
+                            </div>
+                            <!-- End Input Group -->
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 form-group">
+
+                              <label for="formControlHoverLightFullName" class="input-label">Title</label>
+
+                              <input type="text" class="form-control form-control-hover-light"
+                                id="formControlHoverLightFullName" placeholder="Mark Williams"
+                                aria-label="Mark Williams">
+                            </div>
+                            <!-- End Input Group -->
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Modal -->
+
+                  <!-- new artist pop up add end-->
+                </div>
+
+                <div class="row marg">
+                  <div class="col-md-8">
+                    <div class="form-group">
+
+                      <label for="formControlHoverLightGenderSelect" class="input-label">Medium</label>
+
+                      <select id="formControlHoverLightGenderSelect" class="custom-select custom-select-hover-light">
+                        <option>Choose a name</option>
+                        <option>John</option>
+                        <option>Frankin</option>
+                        <option>Marie</option>
+                      </select>
+                    </div>
+                    <!-- End Input Group -->
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+
+                      <label for="formControlHoverLightGenderSelect" class="input-label">Type</label>
+
+                      <select id="formControlHoverLightGenderSelect" class="custom-select custom-select-hover-light">
+                        <option>Choose a name</option>
+                        <option>John</option>
+                        <option>Frankin</option>
+                        <option>Marie</option>
+                      </select>
+                    </div>
+                    <!-- End Input Group -->
+                  </div>
+                </div>
+
+                <!-- Nav -->
+                <div class="text-left">
+                  <ul class="nav " role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active pdright0" id="nav-one-eg1-tab" data-toggle="pill" href="#nav-one-eg1"
+                        role="tab" aria-controls="nav-one-eg1" aria-selected="true">Dimension |</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link pdleftalign" id="nav-two-eg1-tab" data-toggle="pill" href="#nav-two-eg1"
+                        role="tab" aria-controls="nav-two-eg1" aria-selected="false">Video</a>
+                    </li>
+
+                  </ul>
+                </div>
+                <!-- End Nav -->
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="nav-one-eg1" role="tabpanel"
+                    aria-labelledby="nav-one-eg1-tab">
+                    <div class="row">
+                      <div class="col-md-3 form-group">
+
+                        <label for="formControlHoverLightFullName" class="input-label posctrl">H :</label>
+
+                        <input type="text" class="form-control form-control-hover-light pleftspccs"
+                          id="formControlHoverLightFullName" placeholder="" aria-label="Mark Williams">
+                      </div>
+                      <div class="col-md-3 form-group">
+
+                        <label for="formControlHoverLightFullName" class="input-label  posctrl">W :</label>
+
+                        <input type="text" class="form-control form-control-hover-light pleftspccs"
+                          id="formControlHoverLightFullName" placeholder="" aria-label="Mark Williams">
+                      </div>
+                      <div class="col-md-3 form-group">
+
+                        <label for="formControlHoverLightFullName" class="input-label  posctrl">D :</label>
+
+                        <input type="text" class="form-control form-control-hover-light pleftspccs"
+                          id="formControlHoverLightFullName" placeholder="" aria-label="Mark Williams">
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
+                    <div class="row">
+                      <div class="col-md-3 form-group">
+
+                        <label for="formControlHoverLightFullName" class="input-label posctrl">H :</label>
+
+                        <input type="text" class="form-control form-control-hover-light pleftspccs"
+                          id="formControlHoverLightFullName" placeholder="" aria-label="Mark Williams">
+                      </div>
+                      <div class="col-md-3 form-group">
+
+                        <label for="formControlHoverLightFullName" class="input-label  posctrl">W :</label>
+
+                        <input type="text" class="form-control form-control-hover-light pleftspccs"
+                          id="formControlHoverLightFullName" placeholder="" aria-label="Mark Williams">
+                      </div>
+                      <div class="col-md-3 form-group">
+
+                        <label for="formControlHoverLightFullName" class="input-label  posctrl">S :</label>
+
+                        <input type="text" class="form-control form-control-hover-light pleftspccs"
+                          id="formControlHoverLightFullName" placeholder="" aria-label="Mark Williams">
+                      </div>
+                      <div class="col-md-3 form-group">
+
+                        <label for="formControlHoverLightFullName" class="input-label">inches</label>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <!-- End Tab Content -->
+                <div class="row">
+                  <div class="col-md-12 form-group">
+
+                    <label for="formControlHoverLightGenderSelect" class="input-label">Location</label>
+                    <select id="formControlHoverLightGenderSelect" class="custom-select custom-select-hover-light">
+                      <option>My Studio</option>
+                      <option>John</option>
+                      <option>Frankin</option>
+                      <option>Marie</option>
+                    </select>
+                    <button type="button" class="btn btnnewmodopncs" data-toggle="modal"
+                      data-target="#exampleModalCenteredScrollable3">
+                      new location </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+
+                      <label for="formControlHoverLightMedium" class="input-label">
+                        Starting Date</label>
+
+                      <input type="date" class="form-control form-control-hover-light" id="formControlHoverLightMedium"
+                        placeholder="" aria-label="Mark Williams">
+
+                    </div>
+                    <!-- End Input Group -->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+
+
+                      <label for="formControlHoverLightType" class="input-label">Completion Date</label>
+
+                      <input type="date" class="form-control form-control-hover-light" id="formControlHoverLightType"
+                        placeholder="" aria-label="Mark Williams">
+                    </div>
+                    <!-- End Input Group -->
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+
+                    <label for="formControlHoverLightGenderSelect" class="input-label">Holiday Dates</label>
+                    <input type="text" class="form-control form-control-hover-light" id="formControlHoverLightFullName"
+                      placeholder="" aria-label="Mark Williams">
+                    <button type="button" class="btn btnnewmodopncs" data-toggle="modal"
+                      data-target="#exampleModalCenteredScrollable3">
+                      Add Another </button>
+
+                    <!-- Modal -->
+                    <div id="exampleModalCenteredScrollable3" class="modal fade" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Add new location
+                            </h5>
+                            <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal"
+                              aria-label="Close">
+                              <i class="tio-clear tio-lg"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+
+                            <div class="row">
+                              <div class="col-md-12 form-group">
+
+                                <label for="formControlHoverLightFullName" class="input-label">Title</label>
+
+                                <input type="text" class="form-control form-control-hover-light"
+                                  id="formControlHoverLightFullName" placeholder="Mark Williams"
+                                  aria-label="Mark Williams">
+                              </div>
+                              <!-- End Input Group -->
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12 form-group">
+
+                                <label for="formControlHoverLightFullName" class="input-label">Title</label>
+
+                                <input type="text" class="form-control form-control-hover-light"
+                                  id="formControlHoverLightFullName" placeholder="Mark Williams"
+                                  aria-label="Mark Williams">
+                              </div>
+                              <!-- End Input Group -->
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Modal -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+
+                    <label for="formControlHoverLightGenderSelect" class="input-label">Inventory Code</label>
+                    <input type="text" class="form-control form-control-hover-light" id="formControlHoverLightFullName"
+                      placeholder="" aria-label="Mark Williams">
+
+
+                  </div>
+                </div>
+                <div class="row">
+
+                  <div class="col-md-12 form-group">
+
+                    <label for="formControlHoverLightFullName" class="input-label">Tags</label>
+
+                    <input id="form-tags-2" name="tags-2" type="text" value="">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </main>
+
+  <main id="content" role="main" class="main"> -->
+    <div class="content container" style="padding-top: 0rem!important;">
+      <div class="row justify-content-lg-center mt-4" style="padding-bottom: 1.75rem;">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <!-- Input Group -->
+
+              <div class="row">
+
+                <div class="col-md-12  form-group " style="text-align: center;margin-top: 24px;">
+                  <button type="button" class="btn btnnewmodopncs" data-toggle="modal"
+                    data-target="#exampleModalCenteredScrollable4">
+                    <h2>Add Team</h2>
+                  </button>
+                </div>
+
+                <!-- Modal -->
+                <div id="exampleModalCenteredScrollable4" class="modal" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalCenteredScrollableTitle4" aria-hidden="true">
+                  <div class="modal-dialog-centered" role="document">
+                    <div class="content container ">
+                      <div class="row justify-content-lg-center mt-4">
+                        <div class="col-md-8">
+                          <div class="card box">
+                            <div class="card-body">
+                              <!-- Input Group -->
+                              <div class="row ml-2 mr-2">
+                                <div class="col-md-12 mt-5 ml-2 form-group">
+
+                                  <div class="flex mar" style="justify-content: space-between;">
+                                    <h1 style="float: left;" style="font-size: 30px;">Select Team</h1><br>
+
+                                    <button class="savee" data-dismiss="modal" aria-label="Close" style="border: solid rgb(47, 179, 255);border-radius: 10px; padding-left: 2vw;
+    padding-right: 2vw;">Save</button>
+
+                                  </div>
+                                </div>
+
+                                <div class=" row ">
+                                  <div class="col col-lg-2 selected" data-id="1">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="2">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="3">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="4">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="5">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+
+                                  <div class="col col-lg-2 selected" data-id="6">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="7">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="8">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="9">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="10">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="11">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                  <div class="col col-lg-2 selected" data-id="12">
+                                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                                    <p style="text-align:center">Contact More Label</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- End Modal -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </main> -->
+
+    <!-- <main id="content" role="main" class="main"> -->
+    <div class="content container hide" id="#teamm" style="padding-top: 0rem!important;">
+      <div class="row justify-content-lg-center mt-4" style="margin-top: 0rem!important; padding-bottom: 2rem;">
+        <div class="col-md-8">
+          <div class="card ">
+            <div class="card-body">
+              <!-- Input Group -->
+              <div class="row">
+                <div class="col-md-12 mt-5 ml-5 form-group">
+                  <h2 style="margin-bottom: 0px;">Add Team</h2><br>
+                  <button class="am" data-toggle="modal" data-target="#exampleModalCenteredScrollable4">
+                    <h6 style="margin-top: -20px;">Add More</h6>
+                  </button>
+                </div>
+                <div class="flex ml-2 mr-2 row wrapper" id="wra" style="width: 2000px;">
+
+                  <!-- <div>
+                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                    <p>Contact More Label</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                    <p>Contact More Label</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/160x160/img6.jpg" alt="">
+                    <p>Contact More Label</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </main>
+
+  <main id="content" role="main" class="main"> -->
+
+
+
+    </div>
+    </div>
+    </div>
+    <script src="../assets/js/jQuery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/hs.dropzone.js"></script>
+    <script>
+      var x = 0;
+      var wrapper = $(".wrapper");
+
+      $(function () {
+        $(".selected").click(function () {
+
+          $(this).toggleClass('yes');
+          // $(this).css('border', "solid 4px blue");
+
+        });
+      });
+
+      $(function () {
+        $(".savee").click(function () {
+          document.getElementById("wra").innerHTML = "";
+          $(".hide").show();
+          let ele = document.getElementsByClassName('yes');
+          let z = 0
+          console.log(ele.length);
+
+
+          $.each(ele, function (index, value) {
+            console.log();
+            $(wrapper).append(value.outerHTML);
+          });
+
+
+
+        });
+      });
+
+
+
+
+
+
+
+
+
+      $(document).on('ready', function () {
+        $('.js-dropzone').each(function () {
+          var dropzone = $.HSCore.components.HSDropzone.init('#' + $(this).attr('id'));
+        });
+      });
+    </script>
+    <script src="../assets/js/profileupload.js"></script>
+</body>
+
+</html>
